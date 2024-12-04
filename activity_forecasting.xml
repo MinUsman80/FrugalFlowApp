@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/back_button"
+            style="@style/CustomBackButton" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/forecasting_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Future Budget Forecast"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/forecasting_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your budget is projected to grow by 10% over the next 6 months, based on data trends."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Progress Bars for Each Month -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/lightgrey"
+            android:padding="16dp">
+
+            <!-- Months and Progress Bars -->
+            <TextView
+                android:id="@+id/month_january"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="January: +2% Growth"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBarJanuary"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="20"
+                android:progressTint="@color/green"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/month_february"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="February: +4% Growth"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <ProgressBar
+                android:id="@+id/progressBarFebruary"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="40"
+                android:progressTint="@color/blue"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/month_march"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="March: +6% Growth"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <ProgressBar
+                android:id="@+id/progressBarMarch"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="60"
+                android:progressTint="@color/yellow"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/month_april"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="April: +8% Growth"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <ProgressBar
+                android:id="@+id/progressBarApril"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="80"
+                android:progressTint="@color/orange"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/month_may"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="May: +9% Growth"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <ProgressBar
+                android:id="@+id/progressBarMay"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="90"
+                android:progressTint="@color/red"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/month_june"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="June: +10% Growth"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <ProgressBar
+                android:id="@+id/progressBarJune"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="100"
+                android:progressTint="@color/purple"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

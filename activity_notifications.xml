@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/back_button"
+        style="@style/CustomBackButton" />
+
+    <!-- Notifications Title -->
+    <TextView
+        android:id="@+id/notifications_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Budget Exceeded Notification -->
+    <LinearLayout
+        android:id="@+id/budget_exceeded_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:padding="12dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_dialog_alert"
+            android:backgroundTint="@android:color/white"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Warning Icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget Exceeded! You have surpassed your spending limit."
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <!-- Saving Goal Met Notification -->
+    <LinearLayout
+        android:id="@+id/saving_goal_met_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:padding="12dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_dialog_info"
+            android:backgroundTint="@android:color/white"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Success Icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saving Goal Met! Congratulations on achieving your savings target."
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

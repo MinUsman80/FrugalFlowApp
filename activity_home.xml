@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp" android:background="@color/white">
+    <!--  Title  -->
+    <TextView android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Frugal Flow" android:textSize="24sp" android:textStyle="bold" android:gravity="center" android:layout_gravity="center_horizontal" android:paddingBottom="16dp" android:textColor="#556B2F"/>
+    <!--  Menu Options  -->
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="8dp">
+            <!--  View Income  -->
+            <Button android:id="@+id/btnViewIncome" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="View Income" android:layout_marginBottom="8dp" android:backgroundTint="#2196F3" android:textColor="@color/white"/>
+            <!--  View Expenses  -->
+            <Button android:id="@+id/btnViewExpenses" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="View Expenses" android:layout_marginBottom="8dp" android:backgroundTint="#2196F3" android:textColor="@color/white"/>
+            <!--  Select Category  -->
+            <Button android:id="@+id/btnSelectCategory" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Select Category" android:layout_marginBottom="8dp" android:backgroundTint="#2196F3" android:textColor="@color/white"/>
+            <!--  Calculate Transactions  -->
+            <Button android:id="@+id/btnCalculateTransactions" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Calculate Transactions" android:layout_marginBottom="8dp" android:backgroundTint="#2196F3" android:textColor="@color/white"/>
+            <!--  View Financial Report  -->
+            <Button android:id="@+id/btnViewReport" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="View Financial Report" android:layout_marginBottom="8dp" android:backgroundTint="#2196F3" android:textColor="@color/white"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
